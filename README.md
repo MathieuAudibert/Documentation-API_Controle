@@ -1,13 +1,25 @@
 # Documentation-API_Controle
-## Titre de l'api
-Description du projet. 
+## API de recherche d'information de bar / Search API about bar informations 
+:fr: : Ceci est une api de recherche d'informations sur les bar en vu d'un controle en 2eme année d'école d'ingénieur.
 
-### Fonctionnalites Principales
-- Afficher la météo, location en fonction de la ville choisie 
-- Fonctionnalite 2
-- ...
+:gb: This is a search api about bar informations for a 2nd year in computer science's school. 
 
-### Instructions d'installation 
+### Fonctionnalites Principales / Main functionalities
+:fr: 
+
+- Afficher la liste de bar disponibles
+- Afficher les informations d'un bar (nom, localisation...)
+- Afficher la liste des bar d'un etat des etats-unis
+
+:gb: 
+
+- List of available bars
+- Show the informations of a bar (name, localisation...)
+- Bar list of a state of the USA
+
+### Instructions d'installation / Installation instructions
+:fr: 
+
 1. Clonez le depot : `git clone https://github.com/MathieuAudibert/docuap`
 2. Installer les dependances : `npm install`
 3. Lancer Postman
