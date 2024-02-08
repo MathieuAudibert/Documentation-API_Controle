@@ -29,6 +29,15 @@ export class BreweryController {
     }
   }
 
+  public async getBreweryByName(req: Request, res: Response): Promise<void> {
+    const { name } = req.params;
+    try {
+      const response: AxiosResponse = await axios.get(`${this.API_URL}?by_name=${encodeURI(name)}`);
+      res.json(response.data);
+    } catch (error) {
+      res.status(500).send('An error occurred while retrieving the brewery.');
+    }
+  }
 
   public async getBreweryDetails(req: Request, res: Response): Promise<void> {
     const id = req.params.id;

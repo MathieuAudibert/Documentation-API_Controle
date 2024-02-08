@@ -51,13 +51,11 @@ Here is the api link : https://openbrewerydb.org/
 -    "typescript": "^5.3.3"
 
 ### Exemples D'utilisation / Usage examples
-#### Exemple 1 (Show all the bars in a city) : 
+#### Example 1 (Show all the bars in a city) : 
 
 :fr: Lancer le server a l'aide de : `npm start`
 - Lancez postman et cliquez sur `skip` a chaque question
 - Dans la barre de recherche, mettez `http://localhost:3000/breweries` --> cliquez sur `send`
-
-![Screen de la barre de recherche](image.png)
 
 :gb: Start the server with : `npm start`
 - Start postman and click on `skip` on every question
@@ -65,7 +63,21 @@ Here is the api link : https://openbrewerydb.org/
 
 ![Search bar screen](image-1.png)
 
+#### Example 2 (Show the informations of a bar by his id) :
+:fr: - Dans postman mettez `http://localhost:3000/breweries/<mettez-l-id>`
 
+:gb: - In postman put `http://localhost:3000/breweries/<put-the-id>`
+
+![Search by id screen](image-2.png)
+
+#### Example 3 (List all the bar of a city) : 
+:fr: - Dans postman mettez `http://localhost:3000/breweries/city/villeexemple`
+- Vous pouvez retrouver [toutes les villes disponibles ici](https://openbrewerydb.org/breweries)
+
+:gb: - In postman put `http://localhost:3000/breweries/city/cityexample`
+- You can find [all the available cities here](https://openbrewerydb.org/breweries) 
+
+![Search bar by city screen](image-3.png)
 
 
 

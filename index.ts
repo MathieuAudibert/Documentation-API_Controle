@@ -26,6 +26,10 @@ app.get("/breweries/city/:city", async (req: Request, res: Response) => {
     }
 });
 
+    app.get("/breweries/name/:name", async (req: Request, res: Response) => {
+    await breweryController.getBreweryByName(req, res);
+});
+
 
 app.get("/breweries/:id", async (req: Request, res: Response) => {
     const id = req.params.id;
