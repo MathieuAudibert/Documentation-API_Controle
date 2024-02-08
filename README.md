@@ -22,21 +22,21 @@
 
 1. Clonez le depot : `git clone https://github.com/MathieuAudibert/Documentation-API_Controle`
 2. Installer les dependances : `npm install`
-    -> Installer typescript : `npm install typescript --save-dev`,
-    -> Installer axios : `npm install axios`,
-    -> Installer les librairies express et node : `npm install @types/express @types/node`
+    - -> Installer typescript : `npm install typescript --save-dev`,
+    - -> Installer axios : `npm install axios`,
+    - -> Installer les librairies express et node : `npm install @types/express @types/node`
 3. Lancer Postman 
-    -> [Lien pour telecharger postman](https://www.postman.com/downloads/)
+    - -> [Lien pour telecharger postman](https://www.postman.com/downloads/)
 
 :gb:
 
-1. Clone the repository: `git clone https://github.com/MathieuAudibert/Documentation-API_Controle`
+1. Clone the repository : `git clone https://github.com/MathieuAudibert/Documentation-API_Controle`
 2. Install dependencies : `npm install`
-    -> Install typescript : `npm install typescript --save-dev`,
-    -> Install axios : `npm install axios`,
-    -> Install express & node librairies : `npm install @types/express @types/node`
+    - -> Install typescript : `npm install typescript --save-dev`,
+    - -> Install axios : `npm install axios`,
+    - -> Install express & node librairies : `npm install @types/express @types/node`
 3. Use Postman 
-    -> [Link to download postman](https://www.postman.com/downloads/)
+    - -> [Link to download postman](https://www.postman.com/downloads/)
 
 ### Configuration Requise / Required Configuration
 - "@types/express": "^4.17.21",
