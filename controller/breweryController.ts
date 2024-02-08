@@ -3,24 +3,11 @@ import { Request, Response } from 'express';
 import { OPEN_BREWERY_DB_BASE_URL } from "../constants/config";
 
 /**
-* @swagger
-* /breweries/name/{names}:
-*  get:
-*    summary: Récupère les informations sur une adresse IP.
-*    tags: [names]
-*    parameters:
-*      - in: path
-*        name: names
-*        required: true
-*        description: Adresse IP dont on souhaite récupérer les informations.
-*        schema:
-*          type: string
-*    responses:
-*      200:
-*        description: Succès, les informations sur l'adresse IP sont récupérées.
-*      
-*/
-
+ * @swagger
+ * tags:
+ *  name: Brewery
+ *  description: Operations liés à  la météo
+ */
 
 export class BreweryController {
   public API_URL: string;
@@ -30,9 +17,66 @@ export class BreweryController {
     this.API_URL = OPEN_BREWERY_DB_BASE_URL;
   }
 
-
-
-
+/**
+   * @swagger
+   * /breweries/name/{names}:
+   *   get:
+   *     summary: Obtient les informations météo.
+   *     description: Récupère les informations météo pour une ville donnée.
+   *     tags: [Brewery]
+   *     parameters:
+   *       - in: path
+   *         name: names
+   *         required: true
+   *         description: Nom du bar.
+   *         schema:
+   *           type: string
+   *     responses:
+   *       200:
+   *         description: Succès. Retourne les données météo.
+   *       400:
+   *         description: Requête incorrecte. Vérifiez les paramètres.
+   */
+  /**
+   * @swagger
+   * /breweries/city/{city}:
+   *   get:
+   *     summary: Obtient les informations météo.
+   *     description: Récupère les informations météo pour une ville donnée.
+   *     tags: [Brewery]
+   *     parameters:
+   *       - in: path
+   *         name: city
+   *         required: true
+   *         description: Nom de la ville.
+   *         schema:
+   *           type: string
+   *     responses:
+   *       200:
+   *         description: Succès. Retourne les données météo.
+   *       400:
+   *         description: Requête incorrecte. Vérifiez les paramètres.
+   */
+    /**
+   * @swagger
+   * /breweries/{id}:
+   *   get:
+   *     summary: Obtient les informations météo.
+   *     description: Retourne les données du bar par rapport a l'id.
+   *     tags: [Brewery]
+   *     parameters:
+   *       - in: path
+   *         name: id
+   *         required: true
+   *         description: Id.
+   *         schema:
+   *           type: string
+   *     responses:
+   *       200:
+   *         description: Succès. Retourne les données du bar par rapport a l'id.
+   *       400:
+   *         description: Requête incorrecte. Vérifiez les paramètres.
+   */
 
   public async getBreweries(req: Request, res: Response): Promise<void> {
     try {

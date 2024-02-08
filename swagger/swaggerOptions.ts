@@ -1,19 +1,19 @@
-import path from 'path';
-
+import path from "path";
+ 
 export const swaggerOptions = {
-  swaggerDefinition: {
-    openapi: '3.0.0',
-    info: {
-      title: 'Open Brewery DB API',
-      version: '1.0.0',
-      description: 'Documentation de l\'API Open Brewery DB',
+    swaggerDefinition: {
+        openapi : '3.0.0',
+        info: {
+            title: 'API brewery',
+            version: '1.0.0',
+            description : 'Documentation de l\'API Météo',
+        },
+        servers: [
+            {
+                url: "http://localhost:3000",
+                description: "serveur local"
+            }
+        ]
     },
-    servers: [
-      {
-        url: 'http://localhost:3000',
-        description: 'Serveur local',
-      },
-    ],
-  },
-  apis: [path.resolve(__dirname, './controller/*.ts')], 
-};
+    apis: [path.resolve(__dirname, '../controller/*.ts')],
+}
