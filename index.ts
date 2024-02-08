@@ -1,18 +1,33 @@
-import express, {Request, Response} from "express";
-import dotenv from "dotenv";
-import axios, {AxiosResponse} from "axios";
+import express, { Application } from 'express';
+import { BreweryRoutes } from './routes/breweryRoutes';
+import swaggerUi from 'swagger-ui-express';
+import * as swaggerDocument from './utils/swagger.json';
 
+class Server {
+  public app: Application;
 
+  constructor() {
+    this.app = express();
+    this.config();
+    this.routes();
+  }
 
+  private config(): void {
+    this.app.use(express.json());
+    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+  }
 
-const app = express();
+  private routes(): void {
+    const breweryRoutes = new BreweryRoutes();
+    this.app.use('/breweries', breweryRoutes.router);
+  }
 
-app.get("/test", (req: Request, res: Response) => {
-    res.send("L'api sur les bar marche!")
-})
+  public start(): void {
+    const PORT = process.env.PORT || 3000;
+    this.app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+    });
+  }
+}
 
-const PORT: number = process.env.port ? parseInt(process.env.port): 3000;
-app.listen(PORT, () => {
-    console.log(`Le serveur tourne sur le port ${PORT}`);
-});
-
+new Server().start();

@@ -1,6 +1,6 @@
 # Documentation-API_Controle
 ## API de recherche d'information de bar / Search API about bar informations 
-🇫🇷 : Ceci est une api de recherche d'informations sur les bar en vu d'un controle en 2eme année d'école d'ingénieur.
+:fr: Ceci est une api de recherche d'informations sur les bar en vu d'un controle en 2eme année d'école d'ingénieur.
 
 :gb: This is a search api about bar informations for a 2nd year in computer science's school. 
 
@@ -20,29 +20,31 @@
 ### Instructions d'installation / Installation instructions
 :fr: 
 
-1. Clonez le depot : `git clone https://github.com/MathieuAudibert/docuap`
+1. Clonez le depot : `git clone https://github.com/MathieuAudibert/Documentation-API_Controle`
 2. Installer les dependances : `npm install`
-3. Lancer Postman
-4. 
+    -> Installer typescript : `npm install typescript --save-dev`,
+    -> Installer axios : `npm install axios`,
+    -> Installer les librairies express et node : `npm install @types/express @types/node`
+3. Lancer Postman 
+    -> [Lien pour telecharger postman](https://www.postman.com/downloads/)
 
-### Configuration Requise 
+:gb:
+
+1. Clone the repository: `git clone https://github.com/MathieuAudibert/Documentation-API_Controle`
+2. Install dependencies : `npm install`
+    -> Install typescript : `npm install typescript --save-dev`,
+    -> Install axios : `npm install axios`,
+    -> Install express & node librairies : `npm install @types/express @types/node`
+3. Use Postman 
+    -> [Link to download postman](https://www.postman.com/downloads/)
+
+### Configuration Requise / Required Configuration
 - "@types/express": "^4.17.21",
 - "@types/node": "^20.11.15",
 - "axios": "^1.6.7",
 - "express": "^4.18.2",
 - "nodemon": "^3.0.3"
 
-### Exemples D'utilisation 
-#### Exemple 1 set response in French 
+### Exemples D'utilisation / Usage examples
+#### Exemple 1 : 
 
-use lang = fr to set response in French
-
-```bash
-`http://api.weatherapi.com/v1/current.json?key=${this.API_KEY}&q=${city}&lang=fr`
-```
-
-[lien vers l'api](https://www.weatherapi.com/)
-
-###
-
-![capture ecran de Paris Depuis Postman](Image.png)
