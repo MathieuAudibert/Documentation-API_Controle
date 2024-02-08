@@ -3,7 +3,7 @@ import { BreweryController } from './controller/breweryController';
 import axios from "axios";
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsdoc from 'swagger-jsdoc';
-import { swaggerOptions } from './swagger';
+import { swaggerOptions } from './swagger/swaggerOptions';
 const app = express();
 const breweryController = new BreweryController();
 
