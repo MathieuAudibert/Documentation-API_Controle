@@ -95,7 +95,7 @@ Here is the api link : https://openbrewerydb.org/
 ![Search bar by name screen](image-4.png)
 
 ### Swagger
-[Lien du swagger](http://localhost:3000/api-docs/)
+[Lien du swagger](http://localhost:3000/api-docs/) | 
 [Swagger Link](http://localhost:3000/api-docs/)
 
 ### Nos adresses e-mail (pro) / Our e-mail adresses
