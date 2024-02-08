@@ -39,11 +39,12 @@
     - -> [Link to download postman](https://www.postman.com/downloads/)
 
 ### Configuration Requise / Required Configuration
-- "@types/express": "^4.17.21",
-- "@types/node": "^20.11.15",
-- "axios": "^1.6.7",
-- "express": "^4.18.2",
-- "nodemon": "^3.0.3"
+-    "@types/express": "^4.17.21",
+-   "@types/node": "^20.11.16",
+-    "@types/swagger-jsdoc": "^6.0.4",
+-    "@types/swagger-ui-express": "^4.1.6",
+-    "nodemon": "^3.0.3",
+-    "typescript": "^5.3.3"
 
 ### Exemples D'utilisation / Usage examples
 #### Exemple 1 : 
