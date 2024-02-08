@@ -14,12 +14,14 @@ Here is the api link : https://openbrewerydb.org/
 - Afficher la liste de tous les bars disponibles (uniquement dans les USA)
 - Afficher les informations d'un bar en fonction de son identifiant
 - Afficher les bars d'une ville
+- Afficher les informations d'un bar avec son nom
 
 :gb: 
 
 - List of all available bars (Uniquely in the USA)
 - Show the informations of a bar by his id
 - Bar list of a city
+- Show the informations of a bar by his name
 
 ### Instructions d'installation / Installation instructions
 :fr: 
@@ -29,6 +31,7 @@ Here is the api link : https://openbrewerydb.org/
     - -> Installer typescript : `npm install typescript --save-dev`,
     - -> Installer axios : `npm install axios`,
     - -> Installer les librairies express et node : `npm install @types/express @types/node`
+    - -> Installer la librairie swagger : `npm install swagger-ui-express swagger-jsdoc`
 3. Lancer Postman 
     - -> [Lien pour telecharger postman](https://www.postman.com/downloads/)
 
@@ -39,16 +42,17 @@ Here is the api link : https://openbrewerydb.org/
     - -> Install typescript : `npm install typescript --save-dev`,
     - -> Install axios : `npm install axios`,
     - -> Install express & node librairies : `npm install @types/express @types/node`
+    - -> Install swagger : `npm install swagger-ui-express swagger-jsdoc`
 3. Use Postman 
     - -> [Link to download postman](https://www.postman.com/downloads/)
 
 ### Configuration Requise / Required Configuration
--    "@types/express": "^4.17.21",
--   "@types/node": "^20.11.16",
--    "@types/swagger-jsdoc": "^6.0.4",
--    "@types/swagger-ui-express": "^4.1.6",
--    "nodemon": "^3.0.3",
--    "typescript": "^5.3.3"
+-    "axios": "^1.6.7",
+-    "dotenv": "^16.4.1",
+-    "express": "^4.18.2",
+-    "swagger-jsdoc": "^6.2.8",
+-    "swagger-ui-express": "^5.0.0",
+-    "ts-node": "^10.9.2"
 
 ### Exemples D'utilisation / Usage examples
 #### Example 1 (Show all the bars in a city) : 
@@ -79,11 +83,16 @@ Here is the api link : https://openbrewerydb.org/
 
 ![Search bar by city screen](image-3.png)
 
+#### Example 4 (Show the information of a bar by his name) : 
+:fr: - Dans postman mettez `http://localhost:3000/breweries/name/Exemple`
+- Vous pouvez retrouver [tous les bar disponibles ici](https://openbrewerydb.org/breweries)
+- /!\ Espace se note `%`
 
+:gb: - In postman put `http://localhost:3000/breweries/name/Example`
+- You can find [all the available bars here](https://openbrewerydb.org/breweries) 
+- /!\ Space caracter is `%`
 
-
-
-
+![Search bar by name screen](image-4.png)
 
 ### Nos adresses e-mail (pro) / Our e-mail adresses (pro)
 mathieu.audibert@efrei.net
