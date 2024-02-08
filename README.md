@@ -2,24 +2,24 @@
 ## API de recherche d'information de bar / Search API about bar informations 
 :fr: Ceci est une api de recherche d'informations sur les bar en vu d'un controle en 2eme année d'école d'ingénieur.
 
-Voici le lien de l'api : (https://openbrewerydb.org/)
+Voici le lien de l'api : https://openbrewerydb.org/
 
 :gb: This is a search api about bar informations for a 2nd year in computer science's school. 
 
-Here is the api link : (https://openbrewerydb.org/)
+Here is the api link : https://openbrewerydb.org/
 
 ### Fonctionnalites Principales / Main functionalities
 :fr: 
 
-- Afficher la liste de bar disponibles
-- Afficher les informations d'un bar (nom, localisation...)
-- Afficher la liste des bar d'un etat des etats-unis
+- Afficher la liste de tous les bars disponibles (uniquement dans les USA)
+- Afficher les informations d'un bar en fonction de son identifiant
+- Afficher les bars d'une ville
 
 :gb: 
 
-- List of available bars
-- Show the informations of a bar (name, localisation...)
-- Bar list of a state of the USA
+- List of all available bars (Uniquely in the USA)
+- Show the informations of a bar by his id
+- Bar list of a city
 
 ### Instructions d'installation / Installation instructions
 :fr: 
@@ -51,5 +51,28 @@ Here is the api link : (https://openbrewerydb.org/)
 -    "typescript": "^5.3.3"
 
 ### Exemples D'utilisation / Usage examples
-#### Exemple 1 : 
+#### Exemple 1 (Show all the bars in a city) : 
 
+:fr: Lancer le server a l'aide de : `npm start`
+- Lancez postman et cliquez sur `skip` a chaque question
+- Dans la barre de recherche, mettez `http://localhost:3000/breweries` --> cliquez sur `send`
+
+![Screen de la barre de recherche](image.png)
+
+:gb: Start the server with : `npm start`
+- Start postman and click on `skip` on every question
+- In the search bar, put `http://localhost:3000/breweries` --> click on `send`
+
+![Search bar screen](image-1.png)
+
+
+
+
+
+
+
+
+
+### Nos adresses e-mail (pro) / Our e-mail adresses (pro)
+mathieu.audibert@efrei.net
+andrija.tomic@efrei.net
